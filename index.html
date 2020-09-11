@@ -7,10 +7,12 @@
     <link href="css/styles.css" rel="stylesheet">
   </head>
 
+  <body class="grid-container">
+
     <header class="header">
         <h1>YourApp</h1>
 
-        <div> <!--bell icon  -->
+        <div> <!--bell icon ???????????/ -->
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve"> <style type="text/css">.st0{fill:#FFFFFF;} </style>
                 <g id="_x36__6_">
@@ -28,14 +30,16 @@
         <h3>Beth Fossum</h3> <!--profile name?????????????-->
     </header>
 
-        <body class="grid-container"><!--use main instead of body??-->
+    <nav class="navigation"><!--sidebar navigation-->
+        <a></a>
+        <p>just for trail/error</p>
+        <img>
+    </nav>
 
-            <nav class="navigation"><!--sidebar navigation-->
-                <a></a>
-                <img>
-            </nav>
 
-                <main><!--columns and rows, but use css grid for rows-->
+    <main class="main"><!--columns and rows, but use css grid for rows-->
+                
+            
                 <div class="main-header">
                     <h2 class="headline">Dashboard</h2>
                         <div class="main-header-search">
@@ -71,7 +75,7 @@
                         </div>
                 </section> 
 
-                <section class="mobile"> <!-- donut graph -->
+                <section class="daily"> <!-- donut graph -->
                     <h3>Mobile Users</h3>
                         <div class="widget-container-half">
                             <canvas id="mobile-chart"></canvas> <!-- element donut graph will attach to -->
