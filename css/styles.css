@@ -16,15 +16,27 @@ body {
   padding: 1em;
   border-radius: 0.3em;
 }
-/* header {
-  background-color: #3398cc;
-} */
-/* main {
-  background-color: #976698;
-} */
-/* .grid div {
-  border: 2px solid blue;
-} */
-/* footer {
-  background-color: #33cacb;
-} */
+img {
+    border-radius: 50%;
+}
+nav img {
+    height: 80px;
+    width: 80px;
+    margin: auto;
+}
+.header,
+.dashboard, 
+.traffic, 
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.twitter,
+.facebook,
+.google {
+    border: 2px solid red;
+}
+ul {
+    list-style-type: none;
+}

@@ -1,12 +1,18 @@
 
 .header {
     grid-area: head;
-    max-height: 100px;
     background-color: red;
 }
 .navigation {
     grid-area: navigation;
-    background-color: purple;
+    background-color: grey;
+}
+.grid-container {
+    grid-area: main;
+    background-color: yellow;
+}
+.main-grid-container {
+    background-color: blue;
 }
 .dashboard {
     grid-area: dashboard;
@@ -14,7 +20,7 @@
 }
 .traffic {
     grid-area: traffic;
-    background-color: yellow;
+    background-color: red;
 }
 .daily-traffic {
     grid-area: daily;
@@ -44,11 +50,40 @@
     grid-area: settings;
     background-color: palevioletred;
 }
-.grid {
-    height: 100vh;
+.grid-container {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: .3fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+    grid-template-areas: 
+      "head"
+      "navigation"
+      "main";
+  }
+/*=========================================== MEDIA QUERIES =======================================*/
+@media (min-width: 768px) {
+.grid-container {
+    grid-template-columns: 55px 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "head head head"
+      "navigation dashboard dashboard"
+      "navigation traffic traffic"
+      "navigation daily mobile"
+      "navigation social social"
+      "navigation new recent"
+      "navigation message settings";;
+  } 
+  /* main {
+      display: grid;
+  } */
+}
+  
+
+/* 
+.grid-container {
+    /* grid-template-rows: auto;
+    grid-template-columns: 55px 1fr;
     grid-gap: 10px;
     grid-template-areas: 
       "head head head"
@@ -58,4 +93,6 @@
       "navigation social social"
       "navigation new recent"
       "navigation message settings";
-  }
+  } 
+} */ 
+  
