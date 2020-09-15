@@ -1,0 +1,61 @@
+
+.header {
+    grid-area: head;
+    max-height: 100px;
+    background-color: red;
+}
+.navigation {
+    grid-area: navigation;
+    background-color: purple;
+}
+.dashboard {
+    grid-area: dashboard;
+    background-color: orange;
+}
+.traffic {
+    grid-area: traffic;
+    background-color: yellow;
+}
+.daily-traffic {
+    grid-area: daily;
+    background-color: lightgreen;
+}
+.mobile-users {
+    grid-area: mobile;
+    background-color: green;
+}
+.social {
+    grid-area: social;
+    background-color: blue;
+}
+.new-members {
+    grid-area: new;
+    background-color: plum;
+}
+.recent-activity {
+    grid-area: recent;
+    background-color: purple;
+}
+.message-user {
+    grid-area: message;
+    background-color: pink;
+}
+.settings {
+    grid-area: settings;
+    background-color: palevioletred;
+}
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: .3fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+      "head head head"
+      "navigation dashboard dashboard"
+      "navigation traffic traffic"
+      "navigation daily mobile"
+      "navigation social social"
+      "navigation new recent"
+      "navigation message settings";
+  }
