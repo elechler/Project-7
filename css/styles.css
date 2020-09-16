@@ -5,7 +5,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
 	font-family: 'Varela Round', sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: left;
   margin: 0;
 }
@@ -16,6 +16,10 @@ body {
   padding: 1em;
   border-radius: 0.3em;
 }
+/* above from workshop practice, verify need all of it */
+h1 {
+  font-weight: lighter;
+}
 img {
     border-radius: 50%;
 }
@@ -23,7 +27,6 @@ nav img {
     height: 50px;
     width: 50px;
     padding: 10px;
-    /* display: inline-flex; */
 }
 .traffic-nav-link {
   display: inline-flex;
@@ -45,4 +48,45 @@ nav img {
 }
 ul {
     list-style-type: none;
+}
+
+.button-primary {
+  background-color: #7477BF;
+  color: white;
+  border-radius: 5px;
+}
+.button-disabled {
+  background-color: lightslategrey;
+  color: white;
+  border-radius: 5px;
+}
+.bell {
+  fill: white;
+}
+
+/*========================= ADDING ICON TO SEARCH BOX =================*/
+.search-box{
+  /* margin: 0; */
+  padding:0 ;
+  position:relative;
+  margin:5px;
+}
+.search-box input {
+  margin: 0;
+  padding:0 ;
+  display:inline-block;
+  width: 300px;
+  height:30px;
+}
+
+.search-box svg {
+  margin: 0;
+  padding:0 ;
+  position:absolute;
+  display:inline-block;
+  width: 20px;
+  height:28px;
+  left:265px;
+  top:2px;
+  fill: #7477BF;
 }

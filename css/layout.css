@@ -1,10 +1,11 @@
 .header {
     grid-area: head;
-    background-color: red;
+    background-color: #7477BF;
+    color: white;
 }
 .navigation {
     grid-area: navigation;
-    background-color: grey;
+    background-color: #4D4C72;
 }
 .main-grid {
     grid-area: main;
