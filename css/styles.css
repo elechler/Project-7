@@ -20,14 +20,20 @@ img {
     border-radius: 50%;
 }
 nav img {
-    height: 80px;
-    width: 80px;
-    margin: auto;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    /* display: inline-flex; */
+}
+.traffic-nav-link {
+  display: inline-flex;
+  justify-content: flex-end;
+  color: white;
 }
 .header,
 .dashboard, 
 .traffic, 
-.social{
+.social { 
     display: flex;
     justify-content: space-between;
 }

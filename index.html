@@ -8,9 +8,7 @@
     <link href="css/layout.css" rel="stylesheet">
   </head>
 
-    <body>
-        <div class="grid-container">    
-        
+    <body class="grid-container">
             <div class="header"> 
                 <h1>YourApp</h1>
                     <div><!--  div for bell icon -->
@@ -19,213 +17,213 @@
                     <h3>Beth Fossum</h3> 
             </div>
 
-            <div class="navigation"> 
-                <nav>
-                    <a href="#dashboard"><img src="icons/icon-dashboard.svg" title="dashboard" alt="dashboard"></a>
-                    <a href="#members"><img src="icons/icon-members.svg" title="members" alt="members"></a>
-                    <a href="#visits"><img src="icons/icon-visits.svg" title="visits" alt="visits"></a>
-                    <a href="#settings"><img src="icons/icon-settings.svg" title="settings" alt="settings"></a>
-                </nav>
-            </div>
-            
-            <main class="main-grid-container">
-            <div class="dashboard" id="dashboard">
-                <h2>Dashboard</h2>
-                    <div>
-                        <input type="search" placeholder="Search...">
-                    </div>
-            </div>   
+            <main class="main-grid">
 
-                <div class="alert" id="alert">
-
-                </div>
-                
-            <div class="traffic">  
-                <h3>Traffic</h3>
-                    <ul>
-                        <li class="traffic-nav-link">Hourly</li> 
-                        <li class="traffic-nav-link">Daily</li>
-                        <li class="traffic-nav-link">Weekly</li> 
-                        <li class="traffic-nav-link">Monthly</li>
-                    </ul>
-                
-                    <div> 
-                        <canvas id="traffic-chart"></canvas>
-                    </div> 
-            ​</div>
-
-            <div class="daily-traffic">  
-                <h3>Daily Traffic</h3>  
-                    <div> 
-                        <canvas id="daily-traffic"></canvas>
-                    </div>
-            </div>
-
-            <div class="mobile-users">
-                <h3>Mobile Users</h3>  
-                    <div> 
-                        <canvas id="mobile-users"></canvas>
-                    </div>  
-            </div>
-
-            <div class="social" id="visits"> 
-                <div class="twitter">
-                    <div> 
-                        
-                    </div>
-                        <p>Twitter</p>
-                        <p>10,345</p>
-                        </div>
-
-                <div class="facebook">
-                    <div> 
-                        
-                    </div>
-                        <p>Facebook</p>
-                        <p>8,739</p>
-                        </div>
-
-                <div class="google">
-                    <div> 
-                        
-                    </div>
-                        <p>Google+</p>
-                        <p>2,530</p>
-                        </div>
-            </div>
-
-            <div class="new-members" id="members">
-                <h3>New Members</h3>
-
-                        <div class="members-container">
-                            <img src="images/member-1.jpg" class="profile-image">
-                            <div class="members-text">
-                                <p>Victoria Chambers</p>
-                                <a href="#">victoria.chambers80@example.com</a>
-                            </div>
-                            <p>10/15/15</p>
-                        </div>
-
-                        <div class="members-container">
-                            <img src="images/member-2.jpg" class="profile-image">
-                            <div class="members-text">
-                                <p>Dale Byrd</p>
-                                <a href="#">dale.byrd52@example.com</a>
-                            </div>
-                            <p>10/15/15</p>
-                        </div>
-
-                        <div class="members-container">
-                            <img src="images/member-3.jpg" class="profile-image">
-                            <div class="members-text">
-                                <p>Dawn Wood</p>
-                                <a href="#">dawn.wood16@example.com</a>
-                            </div>
-                            <p>10/15/15</p>
-                        </div>
-
-                        <div class="members-container">
-                            <img src="images/member-4.jpg" class="profile-image">
-                            <div class="members-text">
-                                <p>Dan Oliver</p>
-                                <a href="#">dan.oliver82@example.com</a>
-                            </div>
-                            <p>10/15/15</p>
-                        </div>
-                
-            </div>
-
-            <div class="recent-activity">
-                <h3>Recent Activity</h3>
-
-                <div class="recent-activity-container">
-                    <img src="images/member-1.jpg" class="profile-image">
-                    <div class="members-text">
-                        <p>Victoria Chambers commented on YourApp's SEO Tips</p>
-                        <p>4 hours ago</p>
-                    </div>
-                    <p>></p>
-                </div>
-
-                <div class="recent-activity-container">
-                    <img src="images/member-2.jpg" class="profile-image">
-                    <div class="members-text">
-                        <p>Dale Byrd like the post Facebook's Changes for 2016</p>
-                        <p>5 hours ago</p>
-                    </div>
-                    <p>></p>
-                </div>
-
-                <div class="recent-activity-container">
-                    <img src="images/member-3.jpg" class="profile-image">
-                    <div class="members-text">
-                        <p>Dawn Wood commented on Facebook's Changes for 2016</p>
-                        <p>5 hours ago</p>
-                    </div>
-                    <p>></p>
-                </div>
-
-                <div class="recent-activity-container">
-                    <img src="images/member-4.jpg" class="profile-image">
-                    <div class="members-text">
-                        <p>Dan Oliver posted YourApp's SEO Tips</p>
-                        <p>1 day ago</p>
-                    </div>
-                    <p>></p>
+                <div class="navigation"> 
+                    <nav>
+                        <a href="#dashboard"><img src="icons/icon-dashboard.svg" title="dashboard" alt="dashboard"></a>
+                        <a href="#members"><img src="icons/icon-members.svg" title="members" alt="members"></a>
+                        <a href="#visits"><img src="icons/icon-visits.svg" title="visits" alt="visits"></a>
+                        <a href="#settings"><img src="icons/icon-settings.svg" title="settings" alt="settings"></a>
+                    </nav>
                 </div>
             
+                <div class="dashboard" id="dashboard">
+                    <h2>Dashboard</h2>
+                        <div>
+                            <input type="search" placeholder="Search...">
+                        </div>
+                </div>   
 
-            </div>
+                    <div class="alert" id="alert">
 
-            <div class="message-user">
-                <h3>Message User</h3>
-                    <form>
-                        <input type="text" placeholder="Search for user" class="form-field" id="userField">
-                        <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
-                        <button class="button-primary" id="send">Send</button>
-                    </form>
+                    </div>
+                    
+                <div class="traffic">  
+                    <h3>Traffic</h3>
+                        <ul class="traffic-links">
+                            <li class="traffic-nav-link">Hourly</li> 
+                            <li class="traffic-nav-link">Daily</li>
+                            <li class="traffic-nav-link">Weekly</li> 
+                            <li class="traffic-nav-link">Monthly</li>
+                        </ul>
+                    
+                        <div> 
+                            <canvas id="traffic-chart"></canvas>
+                        </div> 
+                ​</div>
 
-            </div>
-
-            <div class="settings" id="settings">
-                <h3>Settings</h3>
-                    <label class="switch-light switch-candy" onclick="">
-                        <input type="checkbox">
-                        <strong>Send Email Notification</strong>
-                        <span>
-                        <span>Off</span>
-                        <span>On</span>
-                        <a></a>
-                        </span>
-                    </label>
-
-                    <label class="switch-light switch-candy" onclick="">
-                        <input type="checkbox">
-                        <strong>Set Profile Public</strong>
-                        <span>
-                        <span>Off</span>
-                        <span>On</span>
-                        <a></a>
-                        </span>
-                    </label>
-
-                <select class="form-field" id="timezone">
-                    <option disabled selected>Select a Timezone</option>
-                    <option>Eastern</option>
-                    <option>Central</option>
-                    <option>Mountain</option>
-                    <option>Pacific</option>
-                </select>
-
-                <div class="settings-button">
-                    <button class="button-primary" id="save">Save</button>
-                    <button class="button-disabled" id="cancel">Cancel</button>
+                <div class="daily-traffic">  
+                    <h3>Daily Traffic</h3>  
+                        <div> 
+                            <canvas id="daily-traffic"></canvas>
+                        </div>
                 </div>
-            
-            </div>
+
+                <div class="mobile-users">
+                    <h3>Mobile Users</h3>  
+                        <div> 
+                            <canvas id="mobile-users"></canvas>
+                        </div>  
+                </div>
+
+                <div class="social" id="visits"> 
+                    <div class="twitter">
+                        <div> 
+                            
+                        </div>
+                            <p>Twitter</p>
+                            <p>10,345</p>
+                            </div>
+
+                    <div class="facebook">
+                        <div> 
+                            
+                        </div>
+                            <p>Facebook</p>
+                            <p>8,739</p>
+                            </div>
+
+                    <div class="google">
+                        <div> 
+                            
+                        </div>
+                            <p>Google+</p>
+                            <p>2,530</p>
+                            </div>
+                </div>
+
+                <div class="new-members" id="members">
+                    <h3>New Members</h3>
+
+                            <div class="members-container">
+                                <img src="images/member-1.jpg" class="profile-image">
+                                <div class="members-text">
+                                    <p>Victoria Chambers</p>
+                                    <a href="#">victoria.chambers80@example.com</a>
+                                </div>
+                                <p>10/15/15</p>
+                            </div>
+
+                            <div class="members-container">
+                                <img src="images/member-2.jpg" class="profile-image">
+                                <div class="members-text">
+                                    <p>Dale Byrd</p>
+                                    <a href="#">dale.byrd52@example.com</a>
+                                </div>
+                                <p>10/15/15</p>
+                            </div>
+
+                            <div class="members-container">
+                                <img src="images/member-3.jpg" class="profile-image">
+                                <div class="members-text">
+                                    <p>Dawn Wood</p>
+                                    <a href="#">dawn.wood16@example.com</a>
+                                </div>
+                                <p>10/15/15</p>
+                            </div>
+
+                            <div class="members-container">
+                                <img src="images/member-4.jpg" class="profile-image">
+                                <div class="members-text">
+                                    <p>Dan Oliver</p>
+                                    <a href="#">dan.oliver82@example.com</a>
+                                </div>
+                                <p>10/15/15</p>
+                            </div>
+                    
+                </div>
+
+                <div class="recent-activity">
+                    <h3>Recent Activity</h3>
+
+                    <div class="recent-activity-container">
+                        <img src="images/member-1.jpg" class="profile-image">
+                        <div class="members-text">
+                            <p>Victoria Chambers commented on YourApp's SEO Tips</p>
+                            <p>4 hours ago</p>
+                        </div>
+                        <p>></p>
+                    </div>
+
+                    <div class="recent-activity-container">
+                        <img src="images/member-2.jpg" class="profile-image">
+                        <div class="members-text">
+                            <p>Dale Byrd like the post Facebook's Changes for 2016</p>
+                            <p>5 hours ago</p>
+                        </div>
+                        <p>></p>
+                    </div>
+
+                    <div class="recent-activity-container">
+                        <img src="images/member-3.jpg" class="profile-image">
+                        <div class="members-text">
+                            <p>Dawn Wood commented on Facebook's Changes for 2016</p>
+                            <p>5 hours ago</p>
+                        </div>
+                        <p>></p>
+                    </div>
+
+                    <div class="recent-activity-container">
+                        <img src="images/member-4.jpg" class="profile-image">
+                        <div class="members-text">
+                            <p>Dan Oliver posted YourApp's SEO Tips</p>
+                            <p>1 day ago</p>
+                        </div>
+                        <p>></p>
+                    </div>
+                
+
+                </div>
+
+                <div class="message-user">
+                    <h3>Message User</h3>
+                        <form>
+                            <input type="text" placeholder="Search for user" class="form-field" id="userField">
+                            <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
+                            <button class="button-primary" id="send">Send</button>
+                        </form>
+
+                </div>
+
+                <div class="settings" id="settings">
+                    <h3>Settings</h3>
+                        <label class="switch-light switch-candy" onclick="">
+                            <input type="checkbox">
+                            <strong>Send Email Notification</strong>
+                            <span>
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                            </span>
+                        </label>
+
+                        <label class="switch-light switch-candy" onclick="">
+                            <input type="checkbox">
+                            <strong>Set Profile Public</strong>
+                            <span>
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                            </span>
+                        </label>
+
+                    <select class="form-field" id="timezone">
+                        <option disabled selected>Select a Timezone</option>
+                        <option>Eastern</option>
+                        <option>Central</option>
+                        <option>Mountain</option>
+                        <option>Pacific</option>
+                    </select>
+
+                    <div class="settings-button">
+                        <button class="button-primary" id="save">Save</button>
+                        <button class="button-disabled" id="cancel">Cancel</button>
+                    </div>
+                
+                </div>
             </main>
-        </div>
-
+        
         <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>
