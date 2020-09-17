@@ -1,7 +1,6 @@
 .header {
     grid-area: head;
     background-color: #7477BF;
-    color: white;
 }
 .navigation {
     grid-area: navigation;
@@ -67,7 +66,7 @@
     .main-grid {
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 55px 1fr 1fr;
+        grid-template-columns: 75px 1fr 1fr;
         grid-template-areas:
         "navigation dashboard dashboard"
         "navigation traffic traffic"
@@ -76,7 +75,6 @@
         "navigation new recent"
         "navigation message settings";
     }
-    
 }
 
 
