@@ -8,15 +8,15 @@
 }
 .main-grid {
     grid-area: main;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .dashboard {
     grid-area: dashboard;
-    background-color: orange;
+    /* background-color: orange; */
 }
 .traffic {
     grid-area: traffic;
-    background-color: red;
+    /* background-color: red; */
 }
 .daily-traffic {
     grid-area: daily;
