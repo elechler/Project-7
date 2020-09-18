@@ -20,11 +20,11 @@
 }
 .daily-traffic {
     grid-area: daily;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 .mobile-users {
     grid-area: mobile;
-    background-color: green;
+    /* background-color: green; */
 }
 .social {
     grid-area: social;
@@ -32,19 +32,19 @@
 }
 .new-members {
     grid-area: new;
-    background-color: plum;
+    /* background-color: plum; */
 }
 .recent-activity {
     grid-area: recent;
-    background-color: purple;
+    /* background-color: purple; */
 }
 .message-user {
     grid-area: message;
-    background-color: pink;
+    /* background-color: pink; */
 }
 .settings {
     grid-area: settings;
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
 }
 .grid-container {
     display: grid;
