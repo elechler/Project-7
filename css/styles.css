@@ -183,78 +183,116 @@ nav img:hover {
 .social-number {
   font-size: 1.5em;
 }
-
-
-.twitter-box {
+.social {
+  display: block;
+}
+.social h3 {
+  margin: 10px ;
   border: 2px solid red;
+}
+
+/*=========================*/
+.twitter-box,
+.facebook-box,
+.google-box {
+  border: 2px solid grey;
   position: relative;
-  width: 33%;
+  width: 95%;
+  height: 75px;
+  margin: 10px;
+  display: flex;
 }
 .twitter-logo-box {
   position: relative;
-  border: 2px solid green;
   margin-right: 20px;
-  
+  height: 60px;
+  width: 60px;
 }
 .tw-dot {
-  height: 45px;
-  width: 45px;
+  height: 55px;
+  width: 55px;
   background-color:#7477BF;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 5px;
 }
 .twitter-box svg {
   position: absolute;
   z-index: 100;
-  top: 10%;
-  left: 7px;
-  color: 2px solid green;
+  top: 29%;
+  left: 9px;
 }
 .twitter-content {
-  border: 2px solid blue;
   display: block;
   position: absolute;
   right: 0;
   top: 2px;
-  line-height: .5em;
+  line-height: .2em;
   width: 60%;
 }
-
-
-
-
-.facebook-box {
+/*=========================*/
+.facebook-logo-box {
   position: relative;
-  border: 2px solid red;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
 }
-
 .fb-dot {
-  height: 45px;
-  width: 45px;
+  height: 55px;
+  width: 55px;
   background-color:#7477BF;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: 50%;
-  top: 2px;
+  left: 0;
+  top: 5px;
 }
-.google-box {
-  position: relative;
-  border: 2px solid red;
+.facebook-box svg {
+  position: absolute;
+  z-index: 100;
+  top: 18%;
+  left: 4px;
 }
-
-.g-dot {
-  height: 45px;
-  width: 45px;
-  background-color:#7477BF;
-  border-radius: 50%;
-  display: inline-block;
+.facebook-content {
+  display: block;
   position: absolute;
   right: 0;
   top: 2px;
+  line-height: .2em;
+  width: 60%;
+}
+/*=========================*/
+.google-logo-box {
+  position: relative;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+}
+.g-dot {
+  height: 55px;
+  width: 55px;
+  background-color:#7477BF;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.google-box svg {
+  position: absolute;
+  z-index: 100;
+  top: 35%;
+  left: 14px;
+}
+.google-content {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  line-height: .2em;
+  width: 60%;
 }
 
 
@@ -313,11 +351,23 @@ nav img:hover {
   bottom: -25%;
   margin-right: 10px;
 }
+
+/*========================= graphs =================*/
+
+.widget-container-full,
+.widget-container-half {
+  width: 95vw;
+}
 /*========================= MEDIA QUERIES =================*/
 
 @media (min-width: 768px) {
   .navigation-box {
       display: inline-block;
   }
-  
+  .widget-container-full {
+    width: 95vw;
+}
+.widget-container-half {
+  width: 45vw;
+}
 }
