@@ -37,7 +37,8 @@ ul {
 li {
   color: grey;
 }
-.button-primary {        
+.button-primary,
+.button-disabled {        
   background-color: #7477BF;
   color: white;
   border-radius: 5px;
@@ -46,10 +47,6 @@ li {
 }
 .button-disabled {
   background-color: lightslategrey;
-  color: white;
-  border-radius: 5px;
-  border-style: none;
-  padding: 10px;
 }
 /*========================= HEADER STYLING ================================================*/
 .header {
@@ -103,13 +100,16 @@ li {
   .n-dot {
     height: 8px;
     width: 8px;
-    background-color: #78cf82;;
+    background-color: #78cf82;
     border-radius: 50%;
     /* display: inline-block; */
     position: absolute;
     right: 186px;
     top: 6px;
     z-index: 100;
+  }
+  .profile-box svg:hover {
+    border-bottom: 2px solid #78cf82;
   }
 /*========================= NAVIGATION STYLING ===========================================*/
 .navigation-box {
@@ -161,23 +161,22 @@ nav img:hover {
   fill: #7477BF;
 }
 /*========================= NEED TO FIX THIS =============================================*/
-.alert {
+/* .alert {
   background-color: #7477BF;
   color: white;
   border-radius: 5px;
   width: 95%;
-  margin-right: 10px;
-  /* margin: 10px auto;
-  padding: 0 10px; */
+  margin: 10px;
   display: inline-flex;
   border: 2px solid red;
+  height: 40px;
 }
 .alert-banner-close {
   text-align: right;
   color: red;
   margin-left: 50px;
   border: 2px solid yellow;
-}
+} */
 /*========================= TRAFFIC STYLING =============================================*/
 .widget-container-full,
 .widget-container-half {
@@ -214,6 +213,12 @@ nav img:hover {
   right: 10px;
   top: 0;
 }
+/*========================= LEFT OFF HERE =========================================*/
+
+#trafficChartDaily {
+  visibility: hidden;
+  /* border: 2px solid yellow; */
+}
 /*========================= SOCIAL STYLING ==============================================*/
 .social-name {
   color: #7477BF;
@@ -231,7 +236,6 @@ nav img:hover {
   position: absolute;
   top: -34px;
   left: 0;
-  /* display: block; */
 }
 /*=========================*/
 .twitter-box,
@@ -242,8 +246,8 @@ nav img:hover {
   width: 95%;
   height: 75px;
   margin: auto 10px;
- display: flex;
- margin-bottom: 15px;
+  display: flex;
+  margin-bottom: 15px;
 }
 .twitter-logo-box,
 .facebook-logo-box,
@@ -399,6 +403,9 @@ nav img:hover {
   display: inline-flex;
   width: 95%;
   padding: 10px;
+}
+.alert {
+
 }
 }
 /*========================= DESKTOP ===================================*/
