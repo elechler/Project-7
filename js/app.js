@@ -1,15 +1,21 @@
 //========================= ALERT BANNER =====================================================
 const alertBanner = document.getElementById("alert");
-alertBanner.innerHTML = 
-   `<div class="alert">
-        <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
-        <p class="alert-banner-close"><strong>x</strong></p>
-    </div>`
+alertBanner.innerHTML = "test";
+//    `<div class="alert">
+//         <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks to complete</p>
+//         <p class="alert-banner-close"><strong>x</strong></p>
+//     </div>`;
 
     // alertBanner.style.backgroundColor = '#7477BF';
     // alertBanner.style.color = "white";
     // alertBanner.style.borderRadius = "4px";
-    
+    ​
+ alertBanner.addEventListener(​'click'​, e => {
+​   const​ element = e.target;
+​   if​ (element.classList.contains(​"alert-banner-close"​)) {
+    alert.style.display = ​"none" ;
+    }
+
 //========================= LINE CHART =====================================================
 const lineData = {
     labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-20', '11-17', '18-24', '25-31'],

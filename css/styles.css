@@ -74,9 +74,6 @@ li {
   margin-right: 10px;
   top: 10px;
   }
-.bell {
-  fill: white;
-}
 .profile-box img,
 .profile-box h3,
 .profile-box svg {
@@ -100,7 +97,19 @@ li {
 .profile-box svg {
   right: 185px;
   width: 30px;
-  padding: 10px;
+  padding: 0;
+  top: 0;
+  }
+  .n-dot {
+    height: 8px;
+    width: 8px;
+    background-color: #78cf82;;
+    border-radius: 50%;
+    /* display: inline-block; */
+    position: absolute;
+    right: 186px;
+    top: 6px;
+    z-index: 100;
   }
 /*========================= NAVIGATION STYLING ===========================================*/
 .navigation-box {
@@ -173,16 +182,17 @@ nav img:hover {
 .widget-container-full,
 .widget-container-half {
   width: 95vw;
+  margin-bottom: 10px;
 }
 .daily-traffic,
 .mobile-users {
   border: 1px solid grey;
 }
-/*========== graphs =================*/
+/*=============================================================*/
 .traffic-nav-link {
   display: inline-flex;
   justify-content: flex-end;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .traffic-nav-link:hover {
   background-color: #78cf82;
@@ -201,7 +211,7 @@ nav img:hover {
 }
 .traffic-links {
   position: absolute;
-  right: 7%;
+  right: 10px;
   top: 0;
 }
 /*========================= SOCIAL STYLING ==============================================*/
@@ -229,13 +239,11 @@ nav img:hover {
 .google-box {
   border: 1px solid grey;
   position: relative;
-  width: 90%;
+  width: 95%;
   height: 75px;
-  /* margin: 10px auto; */
-  display: flex;
- margin-right: 10px; 
- margin-left: 10px;
- margin-bottom: 10px;
+  margin: auto 10px;
+ display: flex;
+ margin-bottom: 15px;
 }
 .twitter-logo-box,
 .facebook-logo-box,
@@ -318,6 +326,7 @@ nav img:hover {
   width: 90%;
   padding: 10px;
   margin: 10px;
+  border: 2px solid grey;
 }
 .message-form textarea {
   height: 87px;
@@ -343,37 +352,34 @@ nav img:hover {
   margin: 10px;
   border-radius: 5px;
   padding: 10px;
+  border: 2px solid grey;
 }
 .settings button {
   width: 45%;
   margin: 10px;
 }
-/*========================= MEDIA QUERIES ==============================================*/
+/*========================= MEDIA QUERIES ==============================*/
 @media (min-width: 768px) {
 .navigation-box {
   display: inline-block;
 }
 .widget-container-full {
-  width: 95vw;
-  
+  width: 85vw;
+  margin: auto; 
 }
 .widget-container-half {
   width: 45vw;
 }
-.social-title {       /*THIS NEEDS TO BE FIXED*/
-  display: inline-block;
-  
+.social-title {       
+  display: inline-block; 
 }
 .social {
   display: inline-flex;
-  
 }
 .new-members,
 .recent-activity {
   border: 1px solid grey; 
   padding: 5px;
-  /* border-top: none; */
-  /* margin: 10px; */
 }
 .message-user,
 .settings {
@@ -394,4 +400,11 @@ nav img:hover {
   width: 95%;
   padding: 10px;
 }
+}
+/*========================= DESKTOP ===================================*/
+@media (min-width: 1024px) {
+   .members-text {
+    font-size: 1em;
+  }
+  
 }
