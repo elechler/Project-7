@@ -26,8 +26,7 @@
                             </g>
                         </g>
                         </svg>
-
-                        <div id="notifications">
+                        <div id="notifications"> <!-- NEED TO FIX -->
 
                         </div>
                         <img src="images/member-1.jpg" alt="Member 1 profile">
@@ -61,14 +60,24 @@
                 <div class="traffic">  
                     <h3>Traffic</h3>
                         <ul class="traffic-links">
-                            <li class="traffic-nav-link">Hourly</li> 
+                            <li class="traffic-nav-link" id="hourly">Hourly</li> 
                             <li class="traffic-nav-link" id="daily">Daily</li>
-                            <li class="traffic-nav-link">Weekly</li> 
-                            <li class="traffic-nav-link">Monthly</li>
+                            <li class="traffic-nav-link" id="weekly">Weekly</li> 
+                            <li class="traffic-nav-link" id="monthly">Monthly</li>
                         </ul>
-                        <div class="traffic-chart widget-container-full"> 
-                            <canvas id="trafficChart"></canvas>
-                            <canvas id="trafficChartDaily"></canvas>
+                        <div class="widget-container-full"> 
+                            <div class="hourlyChart">
+                                <canvas id="trafficChartHourly"></canvas>
+                            </div>
+                            <div class="dailyChart">
+                                <canvas id="trafficChartDaily"></canvas>
+                            </div>
+                            <div class="weeklyChart">
+                                <canvas id="trafficChartWeekly"></canvas>
+                            </div>
+                            <div class="monthlyChart">
+                                <canvas id="trafficChartMonthly"></canvas>
+                            </div>
                         </div>
                 </div>
 
@@ -100,7 +109,7 @@
                                 c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
                                 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,3,10.1,3c12.1,0,18.7-10,18.7-18.7
                                 c0-0.3,0-0.6,0-0.8C30,5.6,31.1,4.4,32,3.1z"/>
-                            </svg>
+                                </svg>
                         </div>  
                         <div class="twitter-content">
                             <p class="social-name">Twitter</p>
@@ -257,7 +266,6 @@
                             <textarea placeholder="Message for user" class="form-area" id="messageField"></textarea>
                             <button class="button-primary" id="send">Send</button>
                         </form>
-
                 </div>
 
                 <div class="settings" id="settings">

@@ -46,7 +46,7 @@ li {
   padding: 10px;
 }
 .button-disabled {
-  background-color: lightslategrey;
+  background-color: grey;
 }
 /*========================= HEADER STYLING ================================================*/
 .header {
@@ -102,7 +102,6 @@ li {
     width: 8px;
     background-color: #78cf82;
     border-radius: 50%;
-    /* display: inline-block; */
     position: absolute;
     right: 186px;
     top: 6px;
@@ -213,11 +212,10 @@ nav img:hover {
   right: 10px;
   top: 0;
 }
-/*========================= LEFT OFF HERE =========================================*/
-
-#trafficChartDaily {
-  visibility: hidden;
-  /* border: 2px solid yellow; */
+.dailyChart,
+.weeklyChart,
+.monthlyChart {
+  display: none;
 }
 /*========================= SOCIAL STYLING ==============================================*/
 .social-name {
@@ -362,7 +360,7 @@ nav img:hover {
   width: 45%;
   margin: 10px;
 }
-/*========================= MEDIA QUERIES ==============================*/
+/*========================= MEDIA QUERIES TABLET ==============================*/
 @media (min-width: 768px) {
 .navigation-box {
   display: inline-block;
