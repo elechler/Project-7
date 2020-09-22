@@ -1,3 +1,4 @@
+//========================= ALERT BANNER =====================================================
 const alertBanner = document.getElementById("alert");
 alertBanner.innerHTML = 
    `<div class="alert">
@@ -5,11 +6,11 @@ alertBanner.innerHTML =
         <p class="alert-banner-close"><strong>x</strong></p>
     </div>`
 
-    alertBanner.style.backgroundColor = '#7477BF';
-    alertBanner.style.color = "white";
-    alertBanner.style.borderRadius = "4px";
+    // alertBanner.style.backgroundColor = '#7477BF';
+    // alertBanner.style.color = "white";
+    // alertBanner.style.borderRadius = "4px";
     
-//========================= LINE CHART =====================================
+//========================= LINE CHART =====================================================
 const lineData = {
     labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-20', '11-17', '18-24', '25-31'],
     datasets: [{
@@ -40,7 +41,7 @@ const lineChart = new Chart(line, {
     data: lineData,
     options: lineOptions
 });
-//========================= BAR CHART =====================================
+//========================= BAR CHART =======================================================
 const barData = {
     labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
     datasets: [{
@@ -68,7 +69,7 @@ const barChart = new Chart(bar, {
     data: barData,
     options: barOptions,
 });
-//========================= DONUT CHART =====================================
+//========================= DONUT CHART =====================================================
 const donutData = {
     labels: ['Desktop', 'Tablet', 'Phones'],
     datasets: [{
@@ -97,7 +98,7 @@ const donutChart = new Chart(donut, {
     data: donutData,
     options: donutOptions,
 });
-//========================= MESSAGING SECTION =====================================
+//========================= MESSAGING SECTION ==============================================
 const user = document.getElementById('userField');
 const message = document.getElementById('messageField');
 const send = document.getElementById('send');

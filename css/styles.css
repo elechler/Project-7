@@ -37,17 +37,21 @@ ul {
 li {
   color: grey;
 }
-.button-primary {        /*get rid of shadow on buttons*/
+.button-primary {        
   background-color: #7477BF;
   color: white;
   border-radius: 5px;
+  border-style: none;
+  padding: 10px;
 }
 .button-disabled {
   background-color: lightslategrey;
   color: white;
   border-radius: 5px;
+  border-style: none;
+  padding: 10px;
 }
-/*========================= HEADER STYLING =================*/
+/*========================= HEADER STYLING ================================================*/
 .header {
   display: flex;
   justify-content: flex-end;
@@ -98,7 +102,7 @@ li {
   width: 30px;
   padding: 10px;
   }
-/*========================= NAVIGATION STYLING =================*/
+/*========================= NAVIGATION STYLING ===========================================*/
 .navigation-box {
   display: flex;
   justify-content: space-evenly;
@@ -112,16 +116,14 @@ nav img {
   margin: 10px;
 }
 nav img:hover {
-  border-left: 5px solid green;
+  border-left: 5px solid #78cf82;
   border-radius: 5px;
 }
-/*========================= MULTIPLE SECTIONS DISPLAY =================*/
-.dashboard, 
-.social { 
-    display: flex;
-    justify-content: space-between;
+/*========================= DASHBOARD SEARCH BOX =========================================*/
+.dashboard { 
+  display: flex;
+  justify-content: space-between;
 }
-/*========================= DASHBOARD SEARCH BOX =================*/
 .dashboard h2 {
   text-transform: none;
 }
@@ -149,14 +151,41 @@ nav img:hover {
   top:2px;
   fill: #7477BF;
 }
-/*========================= TRAFFIC STYLING =================*/
+/*========================= NEED TO FIX THIS =============================================*/
+.alert {
+  background-color: #7477BF;
+  color: white;
+  border-radius: 5px;
+  width: 95%;
+  margin-right: 10px;
+  /* margin: 10px auto;
+  padding: 0 10px; */
+  display: inline-flex;
+  border: 2px solid red;
+}
+.alert-banner-close {
+  text-align: right;
+  color: red;
+  margin-left: 50px;
+  border: 2px solid yellow;
+}
+/*========================= TRAFFIC STYLING =============================================*/
+.widget-container-full,
+.widget-container-half {
+  width: 95vw;
+}
+.daily-traffic,
+.mobile-users {
+  border: 1px solid grey;
+}
+/*========== graphs =================*/
 .traffic-nav-link {
   display: inline-flex;
   justify-content: flex-end;
   margin-right: 5px;
 }
 .traffic-nav-link:hover {
-  background-color: green;
+  background-color: #78cf82;
   padding: 4px;
   border-radius: 17px;
   color: white;
@@ -175,128 +204,90 @@ nav img:hover {
   right: 7%;
   top: 0;
 }
-/*========================= SOCIAL STYLING =================*/
+/*========================= SOCIAL STYLING ==============================================*/
 .social-name {
   color: #7477BF;
   font-weight: bold;
 }
 .social-number {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 .social {
   display: block;
+  position: relative;
+  margin-top: 30px;
 }
-.social h3 {
-  margin: 10px ;
-  border: 2px solid red;
+.social-title {
+  position: absolute;
+  top: -34px;
+  left: 0;
+  /* display: block; */
 }
-
 /*=========================*/
 .twitter-box,
 .facebook-box,
 .google-box {
-  border: 2px solid grey;
+  border: 1px solid grey;
   position: relative;
-  width: 95%;
+  width: 90%;
   height: 75px;
-  margin: 10px;
+  /* margin: 10px auto; */
   display: flex;
+ margin-right: 10px; 
+ margin-left: 10px;
+ margin-bottom: 10px;
 }
-.twitter-logo-box {
-  position: relative;
-  margin-right: 20px;
-  height: 60px;
-  width: 60px;
-}
-.tw-dot {
-  height: 55px;
-  width: 55px;
-  background-color:#7477BF;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 5px;
-}
-.twitter-box svg {
-  position: absolute;
-  z-index: 100;
-  top: 29%;
-  left: 9px;
-}
-.twitter-content {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 2px;
-  line-height: .2em;
-  width: 60%;
-}
-/*=========================*/
-.facebook-logo-box {
-  position: relative;
-  margin-right: 20px;
-  height: 60px;
-  width: 60px;
-}
-.fb-dot {
-  height: 55px;
-  width: 55px;
-  background-color:#7477BF;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 5px;
-}
-.facebook-box svg {
-  position: absolute;
-  z-index: 100;
-  top: 18%;
-  left: 4px;
-}
-.facebook-content {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 2px;
-  line-height: .2em;
-  width: 60%;
-}
-/*=========================*/
+.twitter-logo-box,
+.facebook-logo-box,
 .google-logo-box {
   position: relative;
   margin-right: 20px;
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
 }
+.tw-dot,
+.fb-dot,
 .g-dot {
-  height: 55px;
-  width: 55px;
+  height: 65px;
+  width: 65px;
   background-color:#7477BF;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  left: 0;
+  left: 3px;
   top: 5px;
 }
-.google-box svg {
-  position: absolute;
-  z-index: 100;
-  top: 35%;
-  left: 14px;
-}
+.twitter-content,
+.facebook-content,
 .google-content {
   display: block;
   position: absolute;
-  right: 0;
-  top: 2px;
+  right: -60px;
+  top: 0;
   line-height: .2em;
-  width: 60%;
+  width: 66%;
+  margin: auto;
 }
-
-
-/*========================= MEMBER STYLING =================*/
+/*=========================*/
+.twitter-box svg,
+.facebook-box svg,
+.google-box svg {
+  position: absolute;
+  z-index: 100;
+}
+.twitter-box svg {
+  top: 31%;
+  left: 16px;
+}
+.facebook-box svg {
+  top: 18%;
+  left: 12px;
+}
+.google-box svg {
+  top: 35%;
+  left: 19px;
+}
+/*========================= MEMBER STYLING ==============================================*/
 .members-container,
 .recent-activity-container {
   border-bottom: 2px solid grey;
@@ -321,26 +312,22 @@ nav img:hover {
   position: absolute;
   right: 5%;
 }
-/*========================= MESSAGE USER =================*/
+/*========================= MESSAGE USER ==============================================*/
 .message-form input,
-.message-form textarea,
-.message-form button {
+.message-form textarea {
   width: 90%;
   padding: 10px;
   margin: 10px;
 }
-/*========================= SETTINGS =================*/
-.settings button {
-  width: 45%;
-  margin: 10px;
-  }
-.form-field {
-  width: 85%;
-  margin: 10px;
-  border-radius: 5px;
-  padding: 10px;
-  border: 2px solid red;
+.message-form textarea {
+  height: 87px;
 }
+.message-form button {
+  width: 95%;
+  margin: auto 10px;
+  padding: 10px;
+}
+/*========================= SETTINGS =================================================*/
 .toggle {
   position: relative;
   margin: 20px;
@@ -351,23 +338,60 @@ nav img:hover {
   bottom: -25%;
   margin-right: 10px;
 }
-
-/*========================= graphs =================*/
-
-.widget-container-full,
-.widget-container-half {
-  width: 95vw;
+.form-field {
+  width: 95%;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
 }
-/*========================= MEDIA QUERIES =================*/
-
+.settings button {
+  width: 45%;
+  margin: 10px;
+}
+/*========================= MEDIA QUERIES ==============================================*/
 @media (min-width: 768px) {
-  .navigation-box {
-      display: inline-block;
-  }
-  .widget-container-full {
-    width: 95vw;
+.navigation-box {
+  display: inline-block;
+}
+.widget-container-full {
+  width: 95vw;
+  
 }
 .widget-container-half {
   width: 45vw;
+}
+.social-title {       /*THIS NEEDS TO BE FIXED*/
+  display: inline-block;
+  
+}
+.social {
+  display: inline-flex;
+  
+}
+.new-members,
+.recent-activity {
+  border: 1px solid grey; 
+  padding: 5px;
+  /* border-top: none; */
+  /* margin: 10px; */
+}
+.message-user,
+.settings {
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  padding: 10px;
+}
+.members-text {
+  font-size: .7em;
+}
+.switch-light {
+  margin-left: 100px;
+  width: 100%;
+}
+.settings-button {
+  display: inline-flex;
+  width: 95%;
+  padding: 10px;
 }
 }

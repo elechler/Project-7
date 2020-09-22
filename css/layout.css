@@ -28,7 +28,7 @@
 }
 .social {
     grid-area: social;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 .new-members {
     grid-area: new;
