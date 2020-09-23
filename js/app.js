@@ -1,14 +1,9 @@
-//========================= ALERT BANNER     -STILL NEEDS WORK =================
+//========================= ALERT BANNER ==============================
 const alertBanner = document.getElementById("alert");
-// alertBanner.innerHTML = `<p><span><strong>Alert</strong>: You have <strong>6</strong> overdue tasks to complete</span></p>
-//     <p class="alert-banner-close"><span>X</span></p>`;
-
-    alertBanner.innerHTML = `<p><strong>Alert</strong>: You have <strong>6</strong> overdue tasks to complete</p>
+alertBanner.innerHTML = `<p><strong>Alert</strong>: You have <strong>6</strong> overdue tasks to complete</p>
     <p class="alert-banner-close">X</p>`;
 
-
 const closeBanner = document.getElementsByClassName("alert-banner-close");
-
 closeBanner[0].addEventListener('click', () => {
     alertBanner.style.display = 'none';
     });
