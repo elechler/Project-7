@@ -48,6 +48,9 @@ li {
 .button-disabled {
   background-color: grey;
 }
+body {
+  margin: 0 auto;
+}
 /*========================= HEADER STYLING ================================================*/
 .header {
   display: flex;
@@ -159,23 +162,20 @@ nav img:hover {
   top:2px;
   fill: #7477BF;
 }
-/*========================= NEED TO FIX THIS =============================================*/
-/* .alert {
+/*========================= ALERT =============================================*/
+.alert {
   background-color: #7477BF;
   color: white;
   border-radius: 5px;
-  width: 95%;
-  margin: 10px;
+  width: 90%;
+  margin-left: 5%;
   display: inline-flex;
-  border: 2px solid red;
-  height: 40px;
+  justify-content: space-between;
 }
-.alert-banner-close {
-  text-align: right;
-  color: red;
-  margin-left: 50px;
-  border: 2px solid yellow;
-} */
+.alert p {
+  margin: 5px;
+  padding: 5px;
+}
 /*========================= TRAFFIC STYLING =============================================*/
 .widget-container-full,
 .widget-container-half {
@@ -183,8 +183,9 @@ nav img:hover {
   margin-bottom: 10px;
 }
 .daily-traffic,
-.mobile-users {
-  border: 1px solid grey;
+.mobile-traffic {
+  width: 95%;
+  margin: 10px auto;
 }
 /*=============================================================*/
 .traffic-nav-link {
@@ -272,7 +273,7 @@ nav img:hover {
 .google-content {
   display: block;
   position: absolute;
-  right: -60px;
+  right: -50px;
   top: 0;
   line-height: .2em;
   width: 66%;
@@ -298,6 +299,9 @@ nav img:hover {
   left: 19px;
 }
 /*========================= MEMBER STYLING ==============================================*/
+.members {
+  margin: 10px;
+}
 .members-container,
 .recent-activity-container {
   border-bottom: 2px solid grey;
@@ -321,6 +325,7 @@ nav img:hover {
 .deco-right {
   position: absolute;
   right: 5%;
+  color: #7477BF;
 }
 /*========================= MESSAGE USER ==============================================*/
 .message-form input,
@@ -365,23 +370,55 @@ nav img:hover {
 .navigation-box {
   display: inline-block;
 }
+.alert {
+  width: 80vw;
+}
+.dashboard,
+.traffic,
+.dailyMobile-traffic,
+.social, 
+.members,
+.messageSettings {
+  width: 85vw;
+}
 .widget-container-full {
   width: 85vw;
   margin: auto; 
 }
 .widget-container-half {
-  width: 45vw;
+  width: 40vw;
+}
+.daily-traffic,
+.mobile-traffic {
+  border: 1px solid grey;
 }
 .social-title {       
   display: inline-block; 
 }
-.social {
+.twitter-box,
+.facebook-box,
+.google-box {
+  background-color: lightgrey;
+}
+.social,
+.dailyMobile-traffic,
+.members,
+.messageSettings {
   display: inline-flex;
 }
 .new-members,
 .recent-activity {
-  border: 1px solid grey; 
-  padding: 5px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey; 
+  width: 100%;
+}
+.members {
+  margin-top: 10px;
+  margin: 0;
+}
+.members-text {
+  font-size: .7em;
 }
 .message-user,
 .settings {
@@ -389,9 +426,7 @@ nav img:hover {
   border-right: 1px solid grey;
   border-left: 1px solid grey;
   padding: 10px;
-}
-.members-text {
-  font-size: .7em;
+  width: 100%;
 }
 .switch-light {
   margin-left: 100px;
@@ -402,8 +437,9 @@ nav img:hover {
   width: 95%;
   padding: 10px;
 }
-.alert {
-
+.dashboard h2 {
+  padding-right: 10px;
+  border-right: 2px solid grey;
 }
 }
 /*========================= DESKTOP ===================================*/
@@ -411,5 +447,7 @@ nav img:hover {
    .members-text {
     font-size: 1em;
   }
-  
+  .profile-box {
+    margin-right: 10%;
+    }
 }

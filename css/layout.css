@@ -15,27 +15,34 @@
 .traffic {
     grid-area: traffic;
 }
-.daily-traffic {
+.dailyMobile-traffic {
     grid-area: daily;
 }
-.mobile-users {
+/* .mobile-users {
     grid-area: mobile;
-}
+} */
 .social {
     grid-area: social;
 }
-.new-members {
+.members {
+    grid-area: members;
+}
+/* .new-members {
     grid-area: new;
 }
 .recent-activity {
     grid-area: recent;
+} */
+
+.messageSettings {
+    grid-area: message;
 }
-.message-user {
+/* .message-user {
     grid-area: message;
 }
 .settings {
     grid-area: settings;
-}
+} */
 .grid-container {
     display: grid;
     grid-template-rows: auto;
@@ -45,10 +52,13 @@
       "navigation"
       "main";
   }
-/*=========================================== MEDIA QUERIES =======================================*/
+/*=========================================== MQ TABLET =======================================*/
 @media (min-width: 768px) {
+    .alert {
+        grid-area: "alert";
+    }
     .grid-container {
-        grid-template-columns: 55px 1 fr;
+        grid-template-columns: 55px 1fr;
         grid-template-areas:
         "head head"
         "main main";
@@ -56,16 +66,21 @@
     .main-grid {
         display: grid;
         grid-template-rows: auto;
-        grid-template-columns: 75px 1fr 1fr;
+        grid-template-columns: 75px 370px 370px;
         grid-template-areas:
         "navigation dashboard dashboard"
+        "navigation alert alert"
         "navigation traffic traffic"
-        "navigation daily mobile"
+        "navigation daily daily"
         "navigation social social"
-        "navigation new recent"
-        "navigation message settings";
+        "navigation members members"
+        "navigation message message";
     }
 }
+/*=========================================== MQ DESKTOP =======================================*/
 
-
+@media (min-width: 1024px) {
+   
+ }
+ 
 

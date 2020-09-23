@@ -1,25 +1,13 @@
 //========================= ALERT BANNER     -STILL NEEDS WORK =================
 const alertBanner = document.getElementById("alert");
-alertBanner.innerHTML = `<div class="alert"><p><strong>Alert</strong>: You have <strong>6</strong> overdue tasks to complete</p>
-    <p class="alert-banner-close">X</p></div>`;
+// alertBanner.innerHTML = `<p><span><strong>Alert</strong>: You have <strong>6</strong> overdue tasks to complete</span></p>
+//     <p class="alert-banner-close"><span>X</span></p>`;
 
+    alertBanner.innerHTML = `<p><strong>Alert</strong>: You have <strong>6</strong> overdue tasks to complete</p>
+    <p class="alert-banner-close">X</p>`;
 
-
-// alertBanner.style.display = "flex";
-// alertBanner.style.justifyContent = "space-between";
-alertBanner.style.width = "90%";
-
-alertBanner.style.backgroundColor = '#7477BF';
-alertBanner.style.color = "white";
-alertBanner.style.borderRadius = "4px";
-
-// alertBanner.style.margin = "10px";
-alertBanner.style.paddingRight = "10px";
-alertBanner.style.paddingLeft = "10px";
-alertBanner.style.padding = "5px";
 
 const closeBanner = document.getElementsByClassName("alert-banner-close");
-closeBanner[0].style.color = "red";
 
 closeBanner[0].addEventListener('click', () => {
     alertBanner.style.display = 'none';
