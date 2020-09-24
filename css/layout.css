@@ -18,31 +18,15 @@
 .dailyMobile-traffic {
     grid-area: daily;
 }
-/* .mobile-users {
-    grid-area: mobile;
-} */
 .social {
     grid-area: social;
 }
 .members {
     grid-area: members;
 }
-/* .new-members {
-    grid-area: new;
-}
-.recent-activity {
-    grid-area: recent;
-} */
-
 .messageSettings {
     grid-area: message;
 }
-/* .message-user {
-    grid-area: message;
-}
-.settings {
-    grid-area: settings;
-} */
 .grid-container {
     display: grid;
     grid-template-rows: auto;
@@ -55,7 +39,7 @@
 /*=========================================== MQ TABLET =======================================*/
 @media (min-width: 768px) {
     .alert {
-        grid-area: "alert";
+        grid-area: alert;
     }
     .grid-container {
         grid-template-columns: 55px 1fr;
@@ -77,10 +61,5 @@
         "navigation message message";
     }
 }
-/*=========================================== MQ DESKTOP =======================================*/
-
-@media (min-width: 1024px) {
-   
- }
  
 

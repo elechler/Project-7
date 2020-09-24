@@ -7,14 +7,19 @@ const closeBanner = document.getElementsByClassName("alert-banner-close");
 closeBanner[0].addEventListener('click', () => {
     alertBanner.style.display = 'none';
     });
-//========================= NOTIFICATIONS     -NEEDS TO BE AT THE SAME TIME ===========
+//========================= NOTIFICATIONS ============================================
 const notifications = document.getElementById('bell');
+const dropdownAlert = document.getElementById('notifications');
+const closeNotifications = document.getElementsByClassName('close-notifications');
+const nDot = document.getElementsByClassName('n-dot');
 
 notifications.addEventListener('click', () => {
-    alert('You have notifications.');
-    alert('Please complete your overdue tasks.');
+    dropdownAlert.style.display = 'block';
 });
-
+closeNotifications[0].addEventListener ('click', () => {
+    dropdownAlert.style.display = 'none';
+    nDot[0].style.display = "none";
+})
 //=======   VARIABLES & HOURLY LINE CHART =========================================
 const hourly = document.getElementById('hourly');
 const daily = document.getElementById('daily');
@@ -197,8 +202,3 @@ send.addEventListener('click', () => {
         alert(`Message successfully sent to: ${user.value}`);
     }
 });
-
-
-
-
-
